@@ -1,0 +1,8 @@
+listam = []
+number = int(input())
+exam = list(map(int,input().split()))
+maxnum = max(exam)
+for i in range(0,number,1):
+    listam.append((exam[i]/maxnum)*100)
+avg = sum(listam)/number
+print(avg)
